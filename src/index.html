@@ -15,7 +15,7 @@
 
         <nav class="flex justify-between items-center gap-4 mr-1.5">
 
-            <img src="assets/light.png" alt="Theme Button" class="h-10" data-theme>
+            <img src="assets/light.png" alt="Theme Button" class="h-8" data-theme>
 
             <!--G-Translate-->
             <div class="gtranslate_wrapper space-x-2"></div>
@@ -25,7 +25,7 @@
     </header>
 
     <!--Main-->
-    <mmain class="w-full m-auto">
+    <main class="w-full m-auto">
 
         <!--Title-->
         <section class="w-fit m-auto">
@@ -34,7 +34,46 @@
 
         </section>
 
-    </mmain>
+        <!--Form and Output-->
+        <section class="w-96 xl:w-2/6 p-5 bg-white mx-auto border border-0.5 border-blue-300 rounded-md drop-shadow">
+
+            <form class="w-fit mx-auto space-y-3">
+
+                <div class="space-y-0.5">
+
+                    <label for="from"><p>From:</p></label>
+                    <select name="from" id="from" class="w-fit px-2 py-1 bg-gray-50 border border-gray-300 rounded">
+                        <option value="">Choose a unit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+
+                </div>
+
+                <div class="space-y-0.5">
+
+                    <label for="to"><p>To:</p></label>
+                    <select name="to" id="to" class="w-fit px-2 py-1 bg-gray-50 border border-gray-300 rounded">
+                        <option value="">Choose a unit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+
+                </div>
+
+                <div class="w-80 h-24 p-3 bg-gray-50 border border-purple-300 rounded shadow-sm flex flex-col justify-center">
+                    
+                    <p class="w-fit font-semibold text-md">Conversion: <span data-output></span></p>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
 
     <!--G-Translate-->
     <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
