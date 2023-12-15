@@ -12,19 +12,26 @@ const converter = (frmSlct, frmIpt, toSlct) => {
     let calc;
     let msg = "";
 
-    if (frmSlct == "celsius" && toSlct == "fahrenheit") {
+    if (frmSlct == "celsius" && toSlct == "fahrenheit") {           // C => F
         calc = ((frmIpt * 1.8) + 32);
-        msg = `${calc.toFixed(1)}° Celsius`;
-    } else if (frmSlct == "celsius" && toSlct == "kelvin") {
-
-    } else if (frmSlct == "fahrenheit" && toSlct == "celsius") {
-
-    } else if (frmSlct == "fahrenheit" && toSlct == "kelvin") {
-
-    } else if (frmSlct == "kelvin" && toSlct == "celsius") {
-
-    } else if (frmSlct == "kelvin" && toSlct == "fahrenheit") {
-
+        msg = `${calc.toFixed(2)}° Celsius`;
+    } else if (frmSlct == "celsius" && toSlct == "kelvin") {        // C => K
+        calc = frmIpt + 273.15;
+        msg = `${calc}° Celsius`;
+    } else if (frmSlct == "fahrenheit" && toSlct == "celsius") {    // F => C
+        calc = ((frmIpt - 32) * 1.8);
+        msg = `${calc.toFixed(2)}° Fahrenheit`;
+    } else if (frmSlct == "fahrenheit" && toSlct == "kelvin") {     // F => K
+        calc = (((frmIpt - 32) * 1.8) + 273.15);
+        msg = `${calc.toFixed(2)}° Fahrenheit`;
+    } else if (frmSlct == "kelvin" && toSlct == "celsius") {        // K => C
+        calc = frmIpt - 273.15;
+        msg = `${calc}° Kelvin`;
+    } else if (frmSlct == "kelvin" && toSlct == "fahrenheit") {     // K => F
+        calc = (((frmIpt - 273.15) * 1.8) + 32);
+        msg = `${calc.toFixed(2)}° Kelvin`;
+    } else {
+        alert("You should select a valid unit combination of temperature.");
     }
 
     return msg;
@@ -38,13 +45,10 @@ form.addEventListener("submit", (e) => {
 
     // Get the values from the "From" inputs
     const frmSlct = fromSelect.value;
-    const frmIpt = fromInput.value;
+    const frmIpt = Number(fromInput.value);
 
     // Get the value from the "To" input
     const toSlct = toSelect.value;
-
-    console.log(frmSlct);
-    console.log(frmIpt);
 
     out.innerHTML = converter(frmSlct, frmIpt, toSlct);
 
