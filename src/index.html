@@ -55,7 +55,7 @@
                             <option value="kelvin">Kelvin</option>
                         </select>
 
-                        <input type="number" name="from" id="from" class="input">
+                        <input type="number" name="from" id="from" class="input" data-from-in>
 
                     </div>
 
@@ -66,7 +66,7 @@
 
                     <label for="to"><p>To:</p></label>
 
-                    <div class="space-x-1">
+                    <div>
 
                         <select name="to" class="w-fit px-2 py-1 bg-gray-50 border border-gray-300 rounded" data-to-select>
                             <option value="">Choose a unit</option>
@@ -74,8 +74,6 @@
                             <option value="fahrenheit">Fahrenheit</option>
                             <option value="kelvin">Kelvin</option>
                         </select>
-
-                        <input type="number" name="to" id="to" class="input">
 
                     </div>
 
@@ -116,6 +114,9 @@
     <!--G-Translate-->
     <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
     <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+
+    <!--Main Script-->
+    <script type="module" src="main.js"></script>
     
 </body>
 </html>
