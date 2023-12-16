@@ -1,10 +1,16 @@
+// Import functions
+import themeChange from "./theme.js";
+
 // Get the referrences from HTML
 const theme = document.querySelector("[data-theme]");               // Theme switching
 const form = document.querySelector("form");                        // Form
 const fromSelect = document.querySelector("[data-from-select]");    // From
 const fromInput = document.querySelector("[data-from-in]");
 const toSelect = document.querySelector("[data-to-select]");        // To
-const out = document.querySelector("[data-output]");                   // Output
+const out = document.querySelector("[data-output]");                // Output
+
+// Call the imported functions
+themeChange(theme); 
 
 // Temperature converter function
 const converter = (frmSlct, frmIpt, toSlct) => {
