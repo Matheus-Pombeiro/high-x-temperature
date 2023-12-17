@@ -43,6 +43,6 @@
  <hr>
 
  <p>Author's Name: Matheus V. G. Pombeiro</p>
- <p>Date of this Post: </p>
+ <p>Post's Date: 12/17/2023 (mm-dd-yyyy)</p>
  <p>Author's Education at this moment: Degree in Accounting Science and Software Engineering student</p>
  <p>Author's LinkedIn Profile: <a href="https://www.linkedin.com/in/matheus-pombeiro/" target="_blank" rel="noopener noreferrer">Matheus Pombeiro</a></p>
