@@ -864,6 +864,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .indent-4 {
   text-indent: 1rem;
 }
