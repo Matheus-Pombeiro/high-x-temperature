@@ -24,22 +24,22 @@ const converter = (frmSlct, frmIpt, toSlct) => {
 
     if (frmSlct == "celsius" && toSlct == "fahrenheit") {           // C => F
         calc = ((frmIpt * 1.8) + 32);
-        msg = `${calc.toFixed(2)}° Celsius`;
+        msg = `${calc.toFixed(2)}° Fahrenheit`;
     } else if (frmSlct == "celsius" && toSlct == "kelvin") {        // C => K
         calc = frmIpt + 273.15;
-        msg = `${calc}° Celsius`;
+        msg = `${calc}° Kelvin`;
     } else if (frmSlct == "fahrenheit" && toSlct == "celsius") {    // F => C
         calc = ((frmIpt - 32) * 1.8);
-        msg = `${calc.toFixed(2)}° Fahrenheit`;
+        msg = `${calc.toFixed(2)}° Celsius`;
     } else if (frmSlct == "fahrenheit" && toSlct == "kelvin") {     // F => K
         calc = (((frmIpt - 32) * 1.8) + 273.15);
-        msg = `${calc.toFixed(2)}° Fahrenheit`;
+        msg = `${calc.toFixed(2)}° Kelvin`;
     } else if (frmSlct == "kelvin" && toSlct == "celsius") {        // K => C
         calc = frmIpt - 273.15;
-        msg = `${calc}° Kelvin`;
+        msg = `${calc}° Celsius`;
     } else if (frmSlct == "kelvin" && toSlct == "fahrenheit") {     // K => F
         calc = (((frmIpt - 273.15) * 1.8) + 32);
-        msg = `${calc.toFixed(2)}° Kelvin`;
+        msg = `${calc.toFixed(2)}° Fahrenheit`;
     } else {
         alert("You should select a valid unit combination of temperature.");
     }
