@@ -8,6 +8,6 @@
     }
 
     .btn {
-        @apply px-2 py-1 bg-blue-500 hover:bg-blue-700 cursor-pointer text-white font-medium rounded;
+        @apply px-2 py-1 bg-blue-500 hover:bg-blue-700 cursor-pointer text-white font-medium rounded outline-none;
     }
 }
