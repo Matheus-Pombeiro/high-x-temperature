@@ -1,7 +1,10 @@
 // Import functions
+import openModal from "./modal.js";
 import themeChange from "./theme.js";
 
 // Get the referrences from HTML
+const modal = document.querySelector("[data-modal]");                // Modal]
+const modalClose = document.querySelector("[data-modalClose]");
 const theme = document.querySelector("[data-theme]");               // Theme switching
 const form = document.querySelector("form");                        // Form
 const fromSelect = document.querySelector("[data-from-select]");    // From
@@ -11,6 +14,7 @@ const out = document.querySelector("[data-output]");                // Output
 
 // Call the imported functions
 themeChange(theme); 
+openModal(modal, modalClose);
 
 // Temperature converter function
 const converter = (frmSlct, frmIpt, toSlct) => {
