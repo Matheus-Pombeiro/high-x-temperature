@@ -38,7 +38,7 @@
     <li>Local Storage to Save User Theme Preferences</li>
  </ul>
 
- <p>You can access the High X Temperature webpage by clicking <a href="#" target="_blank" rel="noopener noreferrer">here</a>.</p>
+ <p>You can access the High X Temperature webpage by clicking <a href="https://matheus-pombeiro.github.io/high-x-temperature/src/index.html" target="_blank" rel="noopener noreferrer">here</a>.</p>
 
  <hr>
 
