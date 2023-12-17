@@ -9,6 +9,19 @@
 </head>
 <body class="w-screen h-screen bg-gray-50 flex flex-col justify-between dark:bg-zinc-800">
 
+    <!--Dialog-->
+    <dialog class="w-96 h-fit xl:w-3/6 xl:h-96 p-7 rounded-md space-y-8 drop-shadow-md" data-modal>
+
+        <img src="assets/close.png" alt="Close button" class="h-9 w-9 ml-auto cursor-pointer duration-200 ease-in-out hover:scale-105" data-modalClose>
+
+        <h1 class="text-center xl:text-2xl font-medium">Welcome to High X Temperature</h1>
+
+        <p class="indent-4">Hello, dear friend! My name's Matheus and it’s a pleasure to meet you here. This is the High X Temperature, your online Temperature Converter. Discover my other authorial projects by clicking the following button or stay with me and convert the temperature!</p>
+
+        <button class="btn flex mx-auto animate-bounce"><a href="https://matheus-pombeiro.github.io/my-authorial-projects/" target="_blank" rel="noopener noreferrer">Know More</a></button>
+
+    </dialog>
+
     <!--Header-->
     <header class="w-full h-16 bg-white drop-shadow flex justify-between items-center dark:bg-zinc-700">
         
@@ -46,16 +59,16 @@
 
                     <label for="from"><p class="text-lg">From:</p></label>
 
-                    <div class="space-x-1">
+                    <div class="space-y-2">
 
-                        <select name="from" class="w-fit px-2 py-1 bg-gray-50 border border-gray-300 rounded" data-from-select>
+                        <select name="from" class="w-full px-2 py-1 bg-gray-50 border border-gray-300 rounded" data-from-select required>
                             <option value="">Choose a unit</option>
                             <option value="celsius">Celsius</option>
                             <option value="fahrenheit">Fahrenheit</option>
                             <option value="kelvin">Kelvin</option>
                         </select>
 
-                        <input type="number" name="from" id="from" class="input" data-from-in>
+                        <input type="number" name="from" id="from" class="input" placeholder="Write the temperature here" data-from-in required step="0.01">
 
                     </div>
 
@@ -68,7 +81,7 @@
 
                     <div>
 
-                        <select name="to" class="w-fit px-2 py-1 bg-gray-50 border border-gray-300 rounded" data-to-select>
+                        <select name="to" class="w-full px-2 py-1 bg-gray-50 border border-gray-300 rounded" data-to-select required>
                             <option value="">Choose a unit</option>
                             <option value="celsius">Celsius</option>
                             <option value="fahrenheit">Fahrenheit</option>
